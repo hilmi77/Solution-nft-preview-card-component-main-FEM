@@ -13,7 +13,7 @@ body {
 }
 
 .card {
-  max-width: 18.7rem;
+  max-width: 22rem;
   width: 100%;
   background-color: hsl(216, 50%, 16%);
   margin-block: auto;
@@ -28,4 +28,68 @@ body {
 .equilibrium {
   width: 100%;
   border-radius: 0.5rem;
+}
+
+.content h1 {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.description {
+  color: hsl(215, 51%, 70%);
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+.etherium-and-date {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.etherium {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.number {
+  color: hsl(178, 100%, 50%);
+  font-size: 1rem;
+}
+
+.date {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.text {
+  color: hsl(215, 51%, 70%);
+  font-size: 1rem;
+}
+hr {
+  margin-top: 1rem;
+  border: 0.5px solid hsl(217, 16%, 45%);
+}
+
+.owner {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.avatar {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 0.25px solid white;
+}
+.owner-info {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.first_part {
+  color: hsl(215, 51%, 70%);
+}
+.name {
+  color: hsl(0, 0%, 100%);
 }
