@@ -17,23 +17,54 @@ body {
   width: 100%;
   background-color: hsl(216, 50%, 16%);
   margin-block: auto;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   border-radius: 0.5rem;
 }
 
 .content {
-  padding: 0.75rem;
+  padding: 1.2rem;
+}
+.equilibrium-container {
+  position: relative;
+  width: 100%; /* Or your specific width */
+  border-radius: 0.5rem;
+  overflow: hidden; /* Ensures the content fits within the rounded corners */
 }
 
 .equilibrium {
   width: 100%;
+  display: block; /* Ensures the image fits the container without spaces */
   border-radius: 0.5rem;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.view-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px; /* Adjust based on your preference */
+  display: none; /* Hide the icon by default */
+  &:hover {
+    cursor: pointer;
+  }
+}
+.equilibrium-container:hover .view-icon {
+  display: block; /* Show the icon on hover */
+}
+.equilibrium-container:hover .equilibrium {
+  opacity: 0.5; /* Dim the image on hover */
 }
 
 .content h1 {
   color: hsl(0, 0%, 100%);
   font-size: 1.5rem;
   margin-top: 1rem;
+  &:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+  }
 }
 .description {
   color: hsl(215, 51%, 70%);
@@ -74,6 +105,7 @@ hr {
   align-items: center;
   gap: 0.5rem;
   margin-top: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 .avatar {
@@ -92,4 +124,32 @@ hr {
 }
 .name {
   color: hsl(0, 0%, 100%);
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 20rem;
+  }
+  .content h1 {
+    font-size: 1.2rem;
+  }
+  .description {
+    font-size: 0.9rem;
+  }
+  .number {
+    font-size: 0.9rem;
+  }
+  .text {
+    font-size: 0.9rem;
+  }
+  .avatar {
+    width: 3rem;
+    height: 3rem;
+  }
+  .owner-info {
+    gap: 0.1rem;
+  }
+  .owner-info .first_part {
+    display: none;
+  }
 }
