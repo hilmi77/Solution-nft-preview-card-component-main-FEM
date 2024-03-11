@@ -26,9 +26,12 @@ body {
 }
 .equilibrium-container {
   position: relative;
-  width: 100%; /* Or your specific width */
+  width: 100%;
   border-radius: 0.5rem;
   overflow: hidden; /* Ensures the content fits within the rounded corners */
+  &:hover {
+    background-color: hsl(178, 100%, 50%);
+  }
 }
 
 .equilibrium {
@@ -55,6 +58,7 @@ body {
 }
 .equilibrium-container:hover .equilibrium {
   opacity: 0.5; /* Dim the image on hover */
+  background-color: hsl(178, 100%, 50%);
 }
 
 .content h1 {
